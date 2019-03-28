@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link rel="stylesheet" href="/assets/jquery-linedtextarea/jquery-linedtextarea.css">
+    <link rel="stylesheet" href="/styles.css">
+    <title>ANTLR</title>
+</head>
+
+<body>
+    <div class="container">
+        <h1 align="center">Analizador</h1>
+        <h5 align="center">ANTLR & JavaScript</h5>
+        <div class="section">
+            <div class="row">
+                <div class="col m6 parserContainer">
+                    <textarea id="parserArea"  class="linedArea"  spellcheck="false"></textarea>
+                    <button class="btn btn-lg btn-rose btnAnalizar">Analizar</button>
+                </div>
+                <div class="col m6">
+                    <div class="errContainer"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="/assets/jquery.js"></script>
+    <script src="/assets/jquery-linedtextarea/jquery-linedtextarea.js"></script>
+    <script src="/scripts.js"></script>
+</body>
+
+</html>
