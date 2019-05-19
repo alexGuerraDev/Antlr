@@ -1,4 +1,4 @@
-// Generated from Matlab.g4 by ANTLR 4.7.2
+// Generated from Matlab/Matlab.g4 by ANTLR 4.7.2
 // jshint ignore: start
 var antlr4 = require('antlr4/index');
 
@@ -29,12 +29,12 @@ MatlabListener.prototype.exitExpresion = function(ctx) {
 };
 
 
-// Enter a parse tree produced by MatlabParser#cabecera.
-MatlabListener.prototype.enterCabecera = function(ctx) {
+// Enter a parse tree produced by MatlabParser#switch_.
+MatlabListener.prototype.enterSwitch_ = function(ctx) {
 };
 
-// Exit a parse tree produced by MatlabParser#cabecera.
-MatlabListener.prototype.exitCabecera = function(ctx) {
+// Exit a parse tree produced by MatlabParser#switch_.
+MatlabListener.prototype.exitSwitch_ = function(ctx) {
 };
 
 
@@ -56,12 +56,84 @@ MatlabListener.prototype.exitOtherwise_ = function(ctx) {
 };
 
 
+// Enter a parse tree produced by MatlabParser#sentencia.
+MatlabListener.prototype.enterSentencia = function(ctx) {
+};
+
+// Exit a parse tree produced by MatlabParser#sentencia.
+MatlabListener.prototype.exitSentencia = function(ctx) {
+};
+
+
 // Enter a parse tree produced by MatlabParser#end_.
 MatlabListener.prototype.enterEnd_ = function(ctx) {
 };
 
 // Exit a parse tree produced by MatlabParser#end_.
 MatlabListener.prototype.exitEnd_ = function(ctx) {
+};
+
+
+// Enter a parse tree produced by MatlabParser#const_.
+MatlabListener.prototype.enterConst_ = function(ctx) {
+};
+
+// Exit a parse tree produced by MatlabParser#const_.
+MatlabListener.prototype.exitConst_ = function(ctx) {
+};
+
+
+// Enter a parse tree produced by MatlabParser#parens.
+MatlabListener.prototype.enterParens = function(ctx) {
+};
+
+// Exit a parse tree produced by MatlabParser#parens.
+MatlabListener.prototype.exitParens = function(ctx) {
+};
+
+
+// Enter a parse tree produced by MatlabParser#MulDiv.
+MatlabListener.prototype.enterMulDiv = function(ctx) {
+};
+
+// Exit a parse tree produced by MatlabParser#MulDiv.
+MatlabListener.prototype.exitMulDiv = function(ctx) {
+};
+
+
+// Enter a parse tree produced by MatlabParser#AddSub.
+MatlabListener.prototype.enterAddSub = function(ctx) {
+};
+
+// Exit a parse tree produced by MatlabParser#AddSub.
+MatlabListener.prototype.exitAddSub = function(ctx) {
+};
+
+
+// Enter a parse tree produced by MatlabParser#id.
+MatlabListener.prototype.enterId = function(ctx) {
+};
+
+// Exit a parse tree produced by MatlabParser#id.
+MatlabListener.prototype.exitId = function(ctx) {
+};
+
+
+// Enter a parse tree produced by MatlabParser#int.
+MatlabListener.prototype.enterInt = function(ctx) {
+};
+
+// Exit a parse tree produced by MatlabParser#int.
+MatlabListener.prototype.exitInt = function(ctx) {
+};
+
+
+// Enter a parse tree produced by MatlabParser#digito.
+MatlabListener.prototype.enterDigito = function(ctx) {
+};
+
+// Exit a parse tree produced by MatlabParser#digito.
+MatlabListener.prototype.exitDigito = function(ctx) {
 };
 
 

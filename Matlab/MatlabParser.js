@@ -1,78 +1,97 @@
-// Generated from Matlab.g4 by ANTLR 4.7.2
+// Generated from Matlab/Matlab.g4 by ANTLR 4.7.2
 // jshint ignore: start
 var antlr4 = require('antlr4/index');
 var MatlabListener = require('./MatlabListener').MatlabListener;
 var grammarFileName = "Matlab.g4";
 
 var serializedATN = ["\u0003\u608b\ua72a\u8133\ub9ed\u417c\u3be7\u7786\u5964",
-    "\u0003\u000by\u0004\u0002\t\u0002\u0004\u0003\t\u0003\u0004\u0004\t",
-    "\u0004\u0004\u0005\t\u0005\u0004\u0006\t\u0006\u0004\u0007\t\u0007\u0004",
-    "\b\t\b\u0004\t\t\t\u0004\n\t\n\u0003\u0002\u0003\u0002\u0003\u0002\u0003",
-    "\u0003\u0003\u0003\u0003\u0003\u0003\u0003\u0003\u0003\u0003\u0004\u0003",
-    "\u0004\u0003\u0004\u0003\u0004\u0007\u0004!\n\u0004\f\u0004\u000e\u0004",
-    "$\u000b\u0004\u0003\u0005\u0003\u0005\u0003\u0005\u0003\u0005\u0007",
-    "\u0005*\n\u0005\f\u0005\u000e\u0005-\u000b\u0005\u0003\u0005\u0007\u0005",
-    "0\n\u0005\f\u0005\u000e\u00053\u000b\u0005\u0005\u00055\n\u0005\u0003",
-    "\u0005\u0007\u00058\n\u0005\f\u0005\u000e\u0005;\u000b\u0005\u0003\u0005",
-    "\u0003\u0005\u0003\u0005\u0003\u0005\u0007\u0005A\n\u0005\f\u0005\u000e",
-    "\u0005D\u000b\u0005\u0003\u0005\u0007\u0005G\n\u0005\f\u0005\u000e\u0005",
-    "J\u000b\u0005\u0005\u0005L\n\u0005\u0003\u0005\u0007\u0005O\n\u0005",
-    "\f\u0005\u000e\u0005R\u000b\u0005\u0007\u0005T\n\u0005\f\u0005\u000e",
-    "\u0005W\u000b\u0005\u0003\u0006\u0003\u0006\u0007\u0006[\n\u0006\f\u0006",
-    "\u000e\u0006^\u000b\u0006\u0003\u0007\u0003\u0007\u0007\u0007b\n\u0007",
-    "\f\u0007\u000e\u0007e\u000b\u0007\u0003\b\u0003\b\u0003\b\u0003\t\u0003",
-    "\t\u0005\tl\n\t\u0003\n\u0003\n\u0003\n\u0003\n\u0003\n\u0003\n\u0007",
-    "\nt\n\n\f\n\u000e\nw\u000b\n\u0003\n\u0002\u0002\u000b\u0002\u0004\u0006",
-    "\b\n\f\u000e\u0010\u0012\u0002\u0002\u0002\u0080\u0002\u0014\u0003\u0002",
-    "\u0002\u0002\u0004\u0017\u0003\u0002\u0002\u0002\u0006\u001c\u0003\u0002",
-    "\u0002\u0002\b%\u0003\u0002\u0002\u0002\nX\u0003\u0002\u0002\u0002\f",
-    "_\u0003\u0002\u0002\u0002\u000ef\u0003\u0002\u0002\u0002\u0010i\u0003",
-    "\u0002\u0002\u0002\u0012u\u0003\u0002\u0002\u0002\u0014\u0015\u0005",
-    "\u0004\u0003\u0002\u0015\u0016\u0007\u0002\u0002\u0003\u0016\u0003\u0003",
-    "\u0002\u0002\u0002\u0017\u0018\u0005\u0006\u0004\u0002\u0018\u0019\u0005",
-    "\b\u0005\u0002\u0019\u001a\u0005\n\u0006\u0002\u001a\u001b\u0005\f\u0007",
-    "\u0002\u001b\u0005\u0003\u0002\u0002\u0002\u001c\u001d\u0007\b\u0002",
-    "\u0002\u001d\u001e\u0007\u0006\u0002\u0002\u001e\"\u0005\u000e\b\u0002",
-    "\u001f!\u0007\u0007\u0002\u0002 \u001f\u0003\u0002\u0002\u0002!$\u0003",
-    "\u0002\u0002\u0002\" \u0003\u0002\u0002\u0002\"#\u0003\u0002\u0002\u0002",
-    "#\u0007\u0003\u0002\u0002\u0002$\"\u0003\u0002\u0002\u0002%&\u0007\t",
-    "\u0002\u0002&\'\u0007\u0006\u0002\u0002\'4\u0007\u0004\u0002\u0002(",
-    "*\u0007\u0006\u0002\u0002)(\u0003\u0002\u0002\u0002*-\u0003\u0002\u0002",
-    "\u0002+)\u0003\u0002\u0002\u0002+,\u0003\u0002\u0002\u0002,5\u0003\u0002",
-    "\u0002\u0002-+\u0003\u0002\u0002\u0002.0\u0007\u0007\u0002\u0002/.\u0003",
-    "\u0002\u0002\u000203\u0003\u0002\u0002\u00021/\u0003\u0002\u0002\u0002",
-    "12\u0003\u0002\u0002\u000225\u0003\u0002\u0002\u000231\u0003\u0002\u0002",
-    "\u00024+\u0003\u0002\u0002\u000241\u0003\u0002\u0002\u000259\u0003\u0002",
-    "\u0002\u000268\u0007\u0007\u0002\u000276\u0003\u0002\u0002\u00028;\u0003",
-    "\u0002\u0002\u000297\u0003\u0002\u0002\u00029:\u0003\u0002\u0002\u0002",
-    ":U\u0003\u0002\u0002\u0002;9\u0003\u0002\u0002\u0002<=\u0007\t\u0002",
-    "\u0002=>\u0007\u0006\u0002\u0002>K\u0007\u0004\u0002\u0002?A\u0007\u0006",
-    "\u0002\u0002@?\u0003\u0002\u0002\u0002AD\u0003\u0002\u0002\u0002B@\u0003",
-    "\u0002\u0002\u0002BC\u0003\u0002\u0002\u0002CL\u0003\u0002\u0002\u0002",
-    "DB\u0003\u0002\u0002\u0002EG\u0007\u0007\u0002\u0002FE\u0003\u0002\u0002",
-    "\u0002GJ\u0003\u0002\u0002\u0002HF\u0003\u0002\u0002\u0002HI\u0003\u0002",
-    "\u0002\u0002IL\u0003\u0002\u0002\u0002JH\u0003\u0002\u0002\u0002KB\u0003",
-    "\u0002\u0002\u0002KH\u0003\u0002\u0002\u0002LP\u0003\u0002\u0002\u0002",
-    "MO\u0007\u0007\u0002\u0002NM\u0003\u0002\u0002\u0002OR\u0003\u0002\u0002",
-    "\u0002PN\u0003\u0002\u0002\u0002PQ\u0003\u0002\u0002\u0002QT\u0003\u0002",
-    "\u0002\u0002RP\u0003\u0002\u0002\u0002S<\u0003\u0002\u0002\u0002TW\u0003",
-    "\u0002\u0002\u0002US\u0003\u0002\u0002\u0002UV\u0003\u0002\u0002\u0002",
-    "V\t\u0003\u0002\u0002\u0002WU\u0003\u0002\u0002\u0002X\\\u0007\n\u0002",
-    "\u0002Y[\u0007\u0007\u0002\u0002ZY\u0003\u0002\u0002\u0002[^\u0003\u0002",
-    "\u0002\u0002\\Z\u0003\u0002\u0002\u0002\\]\u0003\u0002\u0002\u0002]",
-    "\u000b\u0003\u0002\u0002\u0002^\\\u0003\u0002\u0002\u0002_c\u0007\u000b",
-    "\u0002\u0002`b\u0007\u0007\u0002\u0002a`\u0003\u0002\u0002\u0002be\u0003",
-    "\u0002\u0002\u0002ca\u0003\u0002\u0002\u0002cd\u0003\u0002\u0002\u0002",
-    "d\r\u0003\u0002\u0002\u0002ec\u0003\u0002\u0002\u0002fg\u0005\u0010",
-    "\t\u0002gh\u0005\u0012\n\u0002h\u000f\u0003\u0002\u0002\u0002ik\u0007",
-    "\u0003\u0002\u0002jl\u0007\u0005\u0002\u0002kj\u0003\u0002\u0002\u0002",
-    "kl\u0003\u0002\u0002\u0002l\u0011\u0003\u0002\u0002\u0002mt\u0007\u0003",
-    "\u0002\u0002nt\u0007\u0004\u0002\u0002op\u0007\u0003\u0002\u0002pt\u0007",
-    "\u0005\u0002\u0002qr\u0007\u0004\u0002\u0002rt\u0007\u0005\u0002\u0002",
-    "sm\u0003\u0002\u0002\u0002sn\u0003\u0002\u0002\u0002so\u0003\u0002\u0002",
-    "\u0002sq\u0003\u0002\u0002\u0002tw\u0003\u0002\u0002\u0002us\u0003\u0002",
-    "\u0002\u0002uv\u0003\u0002\u0002\u0002v\u0013\u0003\u0002\u0002\u0002",
-    "wu\u0003\u0002\u0002\u0002\u0011\"+149BHKPU\\cksu"].join("");
+    "\u0003\u0013\u0096\u0004\u0002\t\u0002\u0004\u0003\t\u0003\u0004\u0004",
+    "\t\u0004\u0004\u0005\t\u0005\u0004\u0006\t\u0006\u0004\u0007\t\u0007",
+    "\u0004\b\t\b\u0004\t\t\t\u0004\n\t\n\u0004\u000b\t\u000b\u0004\f\t\f",
+    "\u0004\r\t\r\u0003\u0002\u0003\u0002\u0003\u0002\u0003\u0003\u0003\u0003",
+    "\u0003\u0003\u0003\u0003\u0003\u0003\u0003\u0004\u0003\u0004\u0003\u0004",
+    "\u0003\u0004\u0007\u0004\'\n\u0004\f\u0004\u000e\u0004*\u000b\u0004",
+    "\u0003\u0004\u0006\u0004-\n\u0004\r\u0004\u000e\u0004.\u0003\u0005\u0003",
+    "\u0005\u0003\u0005\u0003\u0005\u0007\u00055\n\u0005\f\u0005\u000e\u0005",
+    "8\u000b\u0005\u0003\u0005\u0007\u0005;\n\u0005\f\u0005\u000e\u0005>",
+    "\u000b\u0005\u0003\u0005\u0006\u0005A\n\u0005\r\u0005\u000e\u0005B\u0003",
+    "\u0006\u0003\u0006\u0007\u0006G\n\u0006\f\u0006\u000e\u0006J\u000b\u0006",
+    "\u0003\u0006\u0007\u0006M\n\u0006\f\u0006\u000e\u0006P\u000b\u0006\u0003",
+    "\u0006\u0003\u0006\u0003\u0007\u0003\u0007\u0007\u0007V\n\u0007\f\u0007",
+    "\u000e\u0007Y\u000b\u0007\u0003\u0007\u0006\u0007\\\n\u0007\r\u0007",
+    "\u000e\u0007]\u0003\b\u0003\b\u0007\bb\n\b\f\b\u000e\be\u000b\b\u0003",
+    "\b\u0007\bh\n\b\f\b\u000e\bk\u000b\b\u0003\t\u0003\t\u0003\n\u0003\n",
+    "\u0003\n\u0003\n\u0003\n\u0003\n\u0003\n\u0003\n\u0005\nw\n\n\u0003",
+    "\n\u0003\n\u0003\n\u0003\n\u0003\n\u0003\n\u0007\n\u007f\n\n\f\n\u000e",
+    "\n\u0082\u000b\n\u0003\u000b\u0003\u000b\u0003\u000b\u0003\f\u0003\f",
+    "\u0005\f\u0089\n\f\u0003\r\u0003\r\u0003\r\u0003\r\u0003\r\u0003\r\u0007",
+    "\r\u0091\n\r\f\r\u000e\r\u0094\u000b\r\u0003\r\u0002\u0003\u0012\u000e",
+    "\u0002\u0004\u0006\b\n\f\u000e\u0010\u0012\u0014\u0016\u0018\u0002\u0005",
+    "\u0004\u0002\u000b\u000b\u000f\u000f\u0003\u0002\u0003\u0004\u0003\u0002",
+    "\u0005\u0006\u0002\u009e\u0002\u001a\u0003\u0002\u0002\u0002\u0004\u001d",
+    "\u0003\u0002\u0002\u0002\u0006\"\u0003\u0002\u0002\u0002\b@\u0003\u0002",
+    "\u0002\u0002\nD\u0003\u0002\u0002\u0002\fS\u0003\u0002\u0002\u0002\u000e",
+    "_\u0003\u0002\u0002\u0002\u0010l\u0003\u0002\u0002\u0002\u0012v\u0003",
+    "\u0002\u0002\u0002\u0014\u0083\u0003\u0002\u0002\u0002\u0016\u0086\u0003",
+    "\u0002\u0002\u0002\u0018\u0092\u0003\u0002\u0002\u0002\u001a\u001b\u0005",
+    "\u0004\u0003\u0002\u001b\u001c\u0007\u0002\u0002\u0003\u001c\u0003\u0003",
+    "\u0002\u0002\u0002\u001d\u001e\u0005\u0006\u0004\u0002\u001e\u001f\u0005",
+    "\b\u0005\u0002\u001f \u0005\n\u0006\u0002 !\u0005\u000e\b\u0002!\u0005",
+    "\u0003\u0002\u0002\u0002\"#\u0007\u0010\u0002\u0002#$\u0007\r\u0002",
+    "\u0002$(\u0005\u0014\u000b\u0002%\'\u0007\r\u0002\u0002&%\u0003\u0002",
+    "\u0002\u0002\'*\u0003\u0002\u0002\u0002(&\u0003\u0002\u0002\u0002()",
+    "\u0003\u0002\u0002\u0002),\u0003\u0002\u0002\u0002*(\u0003\u0002\u0002",
+    "\u0002+-\u0007\u000e\u0002\u0002,+\u0003\u0002\u0002\u0002-.\u0003\u0002",
+    "\u0002\u0002.,\u0003\u0002\u0002\u0002./\u0003\u0002\u0002\u0002/\u0007",
+    "\u0003\u0002\u0002\u000201\u0007\u0011\u0002\u000212\u0007\r\u0002\u0002",
+    "26\u0007\u000b\u0002\u000235\u0007\r\u0002\u000243\u0003\u0002\u0002",
+    "\u000258\u0003\u0002\u0002\u000264\u0003\u0002\u0002\u000267\u0003\u0002",
+    "\u0002\u00027<\u0003\u0002\u0002\u000286\u0003\u0002\u0002\u00029;\u0007",
+    "\u000e\u0002\u0002:9\u0003\u0002\u0002\u0002;>\u0003\u0002\u0002\u0002",
+    "<:\u0003\u0002\u0002\u0002<=\u0003\u0002\u0002\u0002=?\u0003\u0002\u0002",
+    "\u0002><\u0003\u0002\u0002\u0002?A\u0005\f\u0007\u0002@0\u0003\u0002",
+    "\u0002\u0002AB\u0003\u0002\u0002\u0002B@\u0003\u0002\u0002\u0002BC\u0003",
+    "\u0002\u0002\u0002C\t\u0003\u0002\u0002\u0002DH\u0007\u0012\u0002\u0002",
+    "EG\u0007\r\u0002\u0002FE\u0003\u0002\u0002\u0002GJ\u0003\u0002\u0002",
+    "\u0002HF\u0003\u0002\u0002\u0002HI\u0003\u0002\u0002\u0002IN\u0003\u0002",
+    "\u0002\u0002JH\u0003\u0002\u0002\u0002KM\u0007\u000e\u0002\u0002LK\u0003",
+    "\u0002\u0002\u0002MP\u0003\u0002\u0002\u0002NL\u0003\u0002\u0002\u0002",
+    "NO\u0003\u0002\u0002\u0002OQ\u0003\u0002\u0002\u0002PN\u0003\u0002\u0002",
+    "\u0002QR\u0005\f\u0007\u0002R\u000b\u0003\u0002\u0002\u0002SW\u0005",
+    "\u0012\n\u0002TV\u0007\r\u0002\u0002UT\u0003\u0002\u0002\u0002VY\u0003",
+    "\u0002\u0002\u0002WU\u0003\u0002\u0002\u0002WX\u0003\u0002\u0002\u0002",
+    "X[\u0003\u0002\u0002\u0002YW\u0003\u0002\u0002\u0002Z\\\u0007\u000e",
+    "\u0002\u0002[Z\u0003\u0002\u0002\u0002\\]\u0003\u0002\u0002\u0002][",
+    "\u0003\u0002\u0002\u0002]^\u0003\u0002\u0002\u0002^\r\u0003\u0002\u0002",
+    "\u0002_c\u0007\u0013\u0002\u0002`b\u0007\r\u0002\u0002a`\u0003\u0002",
+    "\u0002\u0002be\u0003\u0002\u0002\u0002ca\u0003\u0002\u0002\u0002cd\u0003",
+    "\u0002\u0002\u0002di\u0003\u0002\u0002\u0002ec\u0003\u0002\u0002\u0002",
+    "fh\u0007\u000e\u0002\u0002gf\u0003\u0002\u0002\u0002hk\u0003\u0002\u0002",
+    "\u0002ig\u0003\u0002\u0002\u0002ij\u0003\u0002\u0002\u0002j\u000f\u0003",
+    "\u0002\u0002\u0002ki\u0003\u0002\u0002\u0002lm\t\u0002\u0002\u0002m",
+    "\u0011\u0003\u0002\u0002\u0002no\b\n\u0001\u0002ow\u0007\u000f\u0002",
+    "\u0002pw\u0005\u0014\u000b\u0002qw\u0007\u000b\u0002\u0002rs\u0007\u0007",
+    "\u0002\u0002st\u0005\u0012\n\u0002tu\u0007\b\u0002\u0002uw\u0003\u0002",
+    "\u0002\u0002vn\u0003\u0002\u0002\u0002vp\u0003\u0002\u0002\u0002vq\u0003",
+    "\u0002\u0002\u0002vr\u0003\u0002\u0002\u0002w\u0080\u0003\u0002\u0002",
+    "\u0002xy\f\b\u0002\u0002yz\t\u0003\u0002\u0002z\u007f\u0005\u0012\n",
+    "\t{|\f\u0007\u0002\u0002|}\t\u0004\u0002\u0002}\u007f\u0005\u0012\n",
+    "\b~x\u0003\u0002\u0002\u0002~{\u0003\u0002\u0002\u0002\u007f\u0082\u0003",
+    "\u0002\u0002\u0002\u0080~\u0003\u0002\u0002\u0002\u0080\u0081\u0003",
+    "\u0002\u0002\u0002\u0081\u0013\u0003\u0002\u0002\u0002\u0082\u0080\u0003",
+    "\u0002\u0002\u0002\u0083\u0084\u0005\u0016\f\u0002\u0084\u0085\u0005",
+    "\u0018\r\u0002\u0085\u0015\u0003\u0002\u0002\u0002\u0086\u0088\u0007",
+    "\n\u0002\u0002\u0087\u0089\u0007\f\u0002\u0002\u0088\u0087\u0003\u0002",
+    "\u0002\u0002\u0088\u0089\u0003\u0002\u0002\u0002\u0089\u0017\u0003\u0002",
+    "\u0002\u0002\u008a\u0091\u0007\n\u0002\u0002\u008b\u0091\u0007\u000b",
+    "\u0002\u0002\u008c\u008d\u0007\n\u0002\u0002\u008d\u0091\u0007\f\u0002",
+    "\u0002\u008e\u008f\u0007\u000b\u0002\u0002\u008f\u0091\u0007\f\u0002",
+    "\u0002\u0090\u008a\u0003\u0002\u0002\u0002\u0090\u008b\u0003\u0002\u0002",
+    "\u0002\u0090\u008c\u0003\u0002\u0002\u0002\u0090\u008e\u0003\u0002\u0002",
+    "\u0002\u0091\u0094\u0003\u0002\u0002\u0002\u0092\u0090\u0003\u0002\u0002",
+    "\u0002\u0092\u0093\u0003\u0002\u0002\u0002\u0093\u0019\u0003\u0002\u0002",
+    "\u0002\u0094\u0092\u0003\u0002\u0002\u0002\u0013(.6<BHNW]civ~\u0080",
+    "\u0088\u0090\u0092"].join("");
 
 
 var atn = new antlr4.atn.ATNDeserializer().deserialize(serializedATN);
@@ -81,14 +100,17 @@ var decisionsToDFA = atn.decisionToState.map( function(ds, index) { return new a
 
 var sharedContextCache = new antlr4.PredictionContextCache();
 
-var literalNames = [ null, null, null, null, null, null, "'WITCH'", "'Case'", 
-                     "'Otherwise'", "'END'" ];
+var literalNames = [ null, "'*'", "'/'", "'+'", "'-'", "'('", "')'", null, 
+                     null, null, null, null, null, null, null, "'Case'", 
+                     "'Otherwise'" ];
 
-var symbolicNames = [ null, "LETRA", "DIGITO", "SEPARADOR", "ESPACIO", "SALTO", 
-                      "WITCH", "CASE", "OTHERWISE", "END" ];
+var symbolicNames = [ null, null, null, null, null, null, null, "OPERADORES", 
+                      "LETRA", "DIGITO", "SEPARADOR", "ESPACIO", "SALTO", 
+                      "CONSTANTE", "SWITCH", "CASE", "OTHERWISE", "END" ];
 
-var ruleNames =  [ "evaluar", "expresion", "cabecera", "case_", "otherwise_", 
-                   "end_", "variable", "inic_variable", "cuerpo_variable" ];
+var ruleNames =  [ "evaluar", "expresion", "switch_", "case_", "otherwise_", 
+                   "sentencia", "end_", "const_", "expr", "variable", "inic_variable", 
+                   "cuerpo_variable" ];
 
 function MatlabParser (input) {
 	antlr4.Parser.call(this, input);
@@ -109,25 +131,36 @@ Object.defineProperty(MatlabParser.prototype, "atn", {
 });
 
 MatlabParser.EOF = antlr4.Token.EOF;
-MatlabParser.LETRA = 1;
-MatlabParser.DIGITO = 2;
-MatlabParser.SEPARADOR = 3;
-MatlabParser.ESPACIO = 4;
-MatlabParser.SALTO = 5;
-MatlabParser.WITCH = 6;
-MatlabParser.CASE = 7;
-MatlabParser.OTHERWISE = 8;
-MatlabParser.END = 9;
+MatlabParser.T__0 = 1;
+MatlabParser.T__1 = 2;
+MatlabParser.T__2 = 3;
+MatlabParser.T__3 = 4;
+MatlabParser.T__4 = 5;
+MatlabParser.T__5 = 6;
+MatlabParser.OPERADORES = 7;
+MatlabParser.LETRA = 8;
+MatlabParser.DIGITO = 9;
+MatlabParser.SEPARADOR = 10;
+MatlabParser.ESPACIO = 11;
+MatlabParser.SALTO = 12;
+MatlabParser.CONSTANTE = 13;
+MatlabParser.SWITCH = 14;
+MatlabParser.CASE = 15;
+MatlabParser.OTHERWISE = 16;
+MatlabParser.END = 17;
 
 MatlabParser.RULE_evaluar = 0;
 MatlabParser.RULE_expresion = 1;
-MatlabParser.RULE_cabecera = 2;
+MatlabParser.RULE_switch_ = 2;
 MatlabParser.RULE_case_ = 3;
 MatlabParser.RULE_otherwise_ = 4;
-MatlabParser.RULE_end_ = 5;
-MatlabParser.RULE_variable = 6;
-MatlabParser.RULE_inic_variable = 7;
-MatlabParser.RULE_cuerpo_variable = 8;
+MatlabParser.RULE_sentencia = 5;
+MatlabParser.RULE_end_ = 6;
+MatlabParser.RULE_const_ = 7;
+MatlabParser.RULE_expr = 8;
+MatlabParser.RULE_variable = 9;
+MatlabParser.RULE_inic_variable = 10;
+MatlabParser.RULE_cuerpo_variable = 11;
 
 function EvaluarContext(parser, parent, invokingState) {
 	if(parent===undefined) {
@@ -176,9 +209,9 @@ MatlabParser.prototype.evaluar = function() {
     this.enterRule(localctx, 0, MatlabParser.RULE_evaluar);
     try {
         this.enterOuterAlt(localctx, 1);
-        this.state = 18;
+        this.state = 24;
         this.expresion();
-        this.state = 19;
+        this.state = 25;
         this.match(MatlabParser.EOF);
     } catch (re) {
     	if(re instanceof antlr4.error.RecognitionException) {
@@ -210,8 +243,8 @@ function ExpresionContext(parser, parent, invokingState) {
 ExpresionContext.prototype = Object.create(antlr4.ParserRuleContext.prototype);
 ExpresionContext.prototype.constructor = ExpresionContext;
 
-ExpresionContext.prototype.cabecera = function() {
-    return this.getTypedRuleContext(CabeceraContext,0);
+ExpresionContext.prototype.switch_ = function() {
+    return this.getTypedRuleContext(Switch_Context,0);
 };
 
 ExpresionContext.prototype.case_ = function() {
@@ -249,13 +282,13 @@ MatlabParser.prototype.expresion = function() {
     this.enterRule(localctx, 2, MatlabParser.RULE_expresion);
     try {
         this.enterOuterAlt(localctx, 1);
-        this.state = 21;
-        this.cabecera();
-        this.state = 22;
+        this.state = 27;
+        this.switch_();
+        this.state = 28;
         this.case_();
-        this.state = 23;
+        this.state = 29;
         this.otherwise_();
-        this.state = 24;
+        this.state = 30;
         this.end_();
     } catch (re) {
     	if(re instanceof antlr4.error.RecognitionException) {
@@ -271,7 +304,7 @@ MatlabParser.prototype.expresion = function() {
     return localctx;
 };
 
-function CabeceraContext(parser, parent, invokingState) {
+function Switch_Context(parser, parent, invokingState) {
 	if(parent===undefined) {
 	    parent = null;
 	}
@@ -280,26 +313,34 @@ function CabeceraContext(parser, parent, invokingState) {
 	}
 	antlr4.ParserRuleContext.call(this, parent, invokingState);
     this.parser = parser;
-    this.ruleIndex = MatlabParser.RULE_cabecera;
+    this.ruleIndex = MatlabParser.RULE_switch_;
     return this;
 }
 
-CabeceraContext.prototype = Object.create(antlr4.ParserRuleContext.prototype);
-CabeceraContext.prototype.constructor = CabeceraContext;
+Switch_Context.prototype = Object.create(antlr4.ParserRuleContext.prototype);
+Switch_Context.prototype.constructor = Switch_Context;
 
-CabeceraContext.prototype.WITCH = function() {
-    return this.getToken(MatlabParser.WITCH, 0);
+Switch_Context.prototype.SWITCH = function() {
+    return this.getToken(MatlabParser.SWITCH, 0);
 };
 
-CabeceraContext.prototype.ESPACIO = function() {
-    return this.getToken(MatlabParser.ESPACIO, 0);
+Switch_Context.prototype.ESPACIO = function(i) {
+	if(i===undefined) {
+		i = null;
+	}
+    if(i===null) {
+        return this.getTokens(MatlabParser.ESPACIO);
+    } else {
+        return this.getToken(MatlabParser.ESPACIO, i);
+    }
 };
 
-CabeceraContext.prototype.variable = function() {
+
+Switch_Context.prototype.variable = function() {
     return this.getTypedRuleContext(VariableContext,0);
 };
 
-CabeceraContext.prototype.SALTO = function(i) {
+Switch_Context.prototype.SALTO = function(i) {
 	if(i===undefined) {
 		i = null;
 	}
@@ -311,46 +352,56 @@ CabeceraContext.prototype.SALTO = function(i) {
 };
 
 
-CabeceraContext.prototype.enterRule = function(listener) {
+Switch_Context.prototype.enterRule = function(listener) {
     if(listener instanceof MatlabListener ) {
-        listener.enterCabecera(this);
+        listener.enterSwitch_(this);
 	}
 };
 
-CabeceraContext.prototype.exitRule = function(listener) {
+Switch_Context.prototype.exitRule = function(listener) {
     if(listener instanceof MatlabListener ) {
-        listener.exitCabecera(this);
+        listener.exitSwitch_(this);
 	}
 };
 
 
 
 
-MatlabParser.CabeceraContext = CabeceraContext;
+MatlabParser.Switch_Context = Switch_Context;
 
-MatlabParser.prototype.cabecera = function() {
+MatlabParser.prototype.switch_ = function() {
 
-    var localctx = new CabeceraContext(this, this._ctx, this.state);
-    this.enterRule(localctx, 4, MatlabParser.RULE_cabecera);
+    var localctx = new Switch_Context(this, this._ctx, this.state);
+    this.enterRule(localctx, 4, MatlabParser.RULE_switch_);
     var _la = 0; // Token type
     try {
         this.enterOuterAlt(localctx, 1);
-        this.state = 26;
-        this.match(MatlabParser.WITCH);
-        this.state = 27;
-        this.match(MatlabParser.ESPACIO);
-        this.state = 28;
-        this.variable();
         this.state = 32;
+        this.match(MatlabParser.SWITCH);
+        this.state = 33;
+        this.match(MatlabParser.ESPACIO);
+        this.state = 34;
+        this.variable();
+        this.state = 38;
         this._errHandler.sync(this);
         _la = this._input.LA(1);
-        while(_la===MatlabParser.SALTO) {
-            this.state = 29;
-            this.match(MatlabParser.SALTO);
-            this.state = 34;
+        while(_la===MatlabParser.ESPACIO) {
+            this.state = 35;
+            this.match(MatlabParser.ESPACIO);
+            this.state = 40;
             this._errHandler.sync(this);
             _la = this._input.LA(1);
         }
+        this.state = 42; 
+        this._errHandler.sync(this);
+        _la = this._input.LA(1);
+        do {
+            this.state = 41;
+            this.match(MatlabParser.SALTO);
+            this.state = 44; 
+            this._errHandler.sync(this);
+            _la = this._input.LA(1);
+        } while(_la===MatlabParser.SALTO);
     } catch (re) {
     	if(re instanceof antlr4.error.RecognitionException) {
 	        localctx.exception = re;
@@ -417,6 +468,17 @@ Case_Context.prototype.DIGITO = function(i) {
 };
 
 
+Case_Context.prototype.sentencia = function(i) {
+    if(i===undefined) {
+        i = null;
+    }
+    if(i===null) {
+        return this.getTypedRuleContexts(SentenciaContext);
+    } else {
+        return this.getTypedRuleContext(SentenciaContext,i);
+    }
+};
+
 Case_Context.prototype.SALTO = function(i) {
 	if(i===undefined) {
 		i = null;
@@ -453,114 +515,42 @@ MatlabParser.prototype.case_ = function() {
     var _la = 0; // Token type
     try {
         this.enterOuterAlt(localctx, 1);
-        this.state = 35;
-        this.match(MatlabParser.CASE);
-        this.state = 36;
-        this.match(MatlabParser.ESPACIO);
-        this.state = 37;
-        this.match(MatlabParser.DIGITO);
-        this.state = 50;
+        this.state = 62; 
         this._errHandler.sync(this);
-        var la_ = this._interp.adaptivePredict(this._input,3,this._ctx);
-        switch(la_) {
-        case 1:
-            this.state = 41;
+        _la = this._input.LA(1);
+        do {
+            this.state = 46;
+            this.match(MatlabParser.CASE);
+            this.state = 47;
+            this.match(MatlabParser.ESPACIO);
+            this.state = 48;
+            this.match(MatlabParser.DIGITO);
+            this.state = 52;
             this._errHandler.sync(this);
             _la = this._input.LA(1);
             while(_la===MatlabParser.ESPACIO) {
-                this.state = 38;
-                this.match(MatlabParser.ESPACIO);
-                this.state = 43;
-                this._errHandler.sync(this);
-                _la = this._input.LA(1);
-            }
-            break;
-
-        case 2:
-            this.state = 47;
-            this._errHandler.sync(this);
-            var _alt = this._interp.adaptivePredict(this._input,2,this._ctx)
-            while(_alt!=2 && _alt!=antlr4.atn.ATN.INVALID_ALT_NUMBER) {
-                if(_alt===1) {
-                    this.state = 44;
-                    this.match(MatlabParser.SALTO); 
-                }
                 this.state = 49;
-                this._errHandler.sync(this);
-                _alt = this._interp.adaptivePredict(this._input,2,this._ctx);
-            }
-
-            break;
-
-        }
-        this.state = 55;
-        this._errHandler.sync(this);
-        _la = this._input.LA(1);
-        while(_la===MatlabParser.SALTO) {
-            this.state = 52;
-            this.match(MatlabParser.SALTO);
-            this.state = 57;
-            this._errHandler.sync(this);
-            _la = this._input.LA(1);
-        }
-        this.state = 83;
-        this._errHandler.sync(this);
-        _la = this._input.LA(1);
-        while(_la===MatlabParser.CASE) {
-            this.state = 58;
-            this.match(MatlabParser.CASE);
-            this.state = 59;
-            this.match(MatlabParser.ESPACIO);
-            this.state = 60;
-            this.match(MatlabParser.DIGITO);
-            this.state = 73;
-            this._errHandler.sync(this);
-            var la_ = this._interp.adaptivePredict(this._input,7,this._ctx);
-            switch(la_) {
-            case 1:
-                this.state = 64;
+                this.match(MatlabParser.ESPACIO);
+                this.state = 54;
                 this._errHandler.sync(this);
                 _la = this._input.LA(1);
-                while(_la===MatlabParser.ESPACIO) {
-                    this.state = 61;
-                    this.match(MatlabParser.ESPACIO);
-                    this.state = 66;
-                    this._errHandler.sync(this);
-                    _la = this._input.LA(1);
-                }
-                break;
-
-            case 2:
-                this.state = 70;
-                this._errHandler.sync(this);
-                var _alt = this._interp.adaptivePredict(this._input,6,this._ctx)
-                while(_alt!=2 && _alt!=antlr4.atn.ATN.INVALID_ALT_NUMBER) {
-                    if(_alt===1) {
-                        this.state = 67;
-                        this.match(MatlabParser.SALTO); 
-                    }
-                    this.state = 72;
-                    this._errHandler.sync(this);
-                    _alt = this._interp.adaptivePredict(this._input,6,this._ctx);
-                }
-
-                break;
-
             }
-            this.state = 78;
+            this.state = 58;
             this._errHandler.sync(this);
             _la = this._input.LA(1);
             while(_la===MatlabParser.SALTO) {
-                this.state = 75;
+                this.state = 55;
                 this.match(MatlabParser.SALTO);
-                this.state = 80;
+                this.state = 60;
                 this._errHandler.sync(this);
                 _la = this._input.LA(1);
             }
-            this.state = 85;
+            this.state = 61;
+            this.sentencia();
+            this.state = 64; 
             this._errHandler.sync(this);
             _la = this._input.LA(1);
-        }
+        } while(_la===MatlabParser.CASE);
     } catch (re) {
     	if(re instanceof antlr4.error.RecognitionException) {
 	        localctx.exception = re;
@@ -594,6 +584,22 @@ Otherwise_Context.prototype.constructor = Otherwise_Context;
 Otherwise_Context.prototype.OTHERWISE = function() {
     return this.getToken(MatlabParser.OTHERWISE, 0);
 };
+
+Otherwise_Context.prototype.sentencia = function() {
+    return this.getTypedRuleContext(SentenciaContext,0);
+};
+
+Otherwise_Context.prototype.ESPACIO = function(i) {
+	if(i===undefined) {
+		i = null;
+	}
+    if(i===null) {
+        return this.getTokens(MatlabParser.ESPACIO);
+    } else {
+        return this.getToken(MatlabParser.ESPACIO, i);
+    }
+};
+
 
 Otherwise_Context.prototype.SALTO = function(i) {
 	if(i===undefined) {
@@ -631,18 +637,134 @@ MatlabParser.prototype.otherwise_ = function() {
     var _la = 0; // Token type
     try {
         this.enterOuterAlt(localctx, 1);
-        this.state = 86;
+        this.state = 66;
         this.match(MatlabParser.OTHERWISE);
-        this.state = 90;
+        this.state = 70;
         this._errHandler.sync(this);
         _la = this._input.LA(1);
-        while(_la===MatlabParser.SALTO) {
-            this.state = 87;
-            this.match(MatlabParser.SALTO);
-            this.state = 92;
+        while(_la===MatlabParser.ESPACIO) {
+            this.state = 67;
+            this.match(MatlabParser.ESPACIO);
+            this.state = 72;
             this._errHandler.sync(this);
             _la = this._input.LA(1);
         }
+        this.state = 76;
+        this._errHandler.sync(this);
+        _la = this._input.LA(1);
+        while(_la===MatlabParser.SALTO) {
+            this.state = 73;
+            this.match(MatlabParser.SALTO);
+            this.state = 78;
+            this._errHandler.sync(this);
+            _la = this._input.LA(1);
+        }
+        this.state = 79;
+        this.sentencia();
+    } catch (re) {
+    	if(re instanceof antlr4.error.RecognitionException) {
+	        localctx.exception = re;
+	        this._errHandler.reportError(this, re);
+	        this._errHandler.recover(this, re);
+	    } else {
+	    	throw re;
+	    }
+    } finally {
+        this.exitRule();
+    }
+    return localctx;
+};
+
+function SentenciaContext(parser, parent, invokingState) {
+	if(parent===undefined) {
+	    parent = null;
+	}
+	if(invokingState===undefined || invokingState===null) {
+		invokingState = -1;
+	}
+	antlr4.ParserRuleContext.call(this, parent, invokingState);
+    this.parser = parser;
+    this.ruleIndex = MatlabParser.RULE_sentencia;
+    return this;
+}
+
+SentenciaContext.prototype = Object.create(antlr4.ParserRuleContext.prototype);
+SentenciaContext.prototype.constructor = SentenciaContext;
+
+SentenciaContext.prototype.expr = function() {
+    return this.getTypedRuleContext(ExprContext,0);
+};
+
+SentenciaContext.prototype.ESPACIO = function(i) {
+	if(i===undefined) {
+		i = null;
+	}
+    if(i===null) {
+        return this.getTokens(MatlabParser.ESPACIO);
+    } else {
+        return this.getToken(MatlabParser.ESPACIO, i);
+    }
+};
+
+
+SentenciaContext.prototype.SALTO = function(i) {
+	if(i===undefined) {
+		i = null;
+	}
+    if(i===null) {
+        return this.getTokens(MatlabParser.SALTO);
+    } else {
+        return this.getToken(MatlabParser.SALTO, i);
+    }
+};
+
+
+SentenciaContext.prototype.enterRule = function(listener) {
+    if(listener instanceof MatlabListener ) {
+        listener.enterSentencia(this);
+	}
+};
+
+SentenciaContext.prototype.exitRule = function(listener) {
+    if(listener instanceof MatlabListener ) {
+        listener.exitSentencia(this);
+	}
+};
+
+
+
+
+MatlabParser.SentenciaContext = SentenciaContext;
+
+MatlabParser.prototype.sentencia = function() {
+
+    var localctx = new SentenciaContext(this, this._ctx, this.state);
+    this.enterRule(localctx, 10, MatlabParser.RULE_sentencia);
+    var _la = 0; // Token type
+    try {
+        this.enterOuterAlt(localctx, 1);
+        this.state = 81;
+        this.expr(0);
+        this.state = 85;
+        this._errHandler.sync(this);
+        _la = this._input.LA(1);
+        while(_la===MatlabParser.ESPACIO) {
+            this.state = 82;
+            this.match(MatlabParser.ESPACIO);
+            this.state = 87;
+            this._errHandler.sync(this);
+            _la = this._input.LA(1);
+        }
+        this.state = 89; 
+        this._errHandler.sync(this);
+        _la = this._input.LA(1);
+        do {
+            this.state = 88;
+            this.match(MatlabParser.SALTO);
+            this.state = 91; 
+            this._errHandler.sync(this);
+            _la = this._input.LA(1);
+        } while(_la===MatlabParser.SALTO);
     } catch (re) {
     	if(re instanceof antlr4.error.RecognitionException) {
 	        localctx.exception = re;
@@ -677,6 +799,18 @@ End_Context.prototype.END = function() {
     return this.getToken(MatlabParser.END, 0);
 };
 
+End_Context.prototype.ESPACIO = function(i) {
+	if(i===undefined) {
+		i = null;
+	}
+    if(i===null) {
+        return this.getTokens(MatlabParser.ESPACIO);
+    } else {
+        return this.getToken(MatlabParser.ESPACIO, i);
+    }
+};
+
+
 End_Context.prototype.SALTO = function(i) {
 	if(i===undefined) {
 		i = null;
@@ -709,7 +843,7 @@ MatlabParser.End_Context = End_Context;
 MatlabParser.prototype.end_ = function() {
 
     var localctx = new End_Context(this, this._ctx, this.state);
-    this.enterRule(localctx, 10, MatlabParser.RULE_end_);
+    this.enterRule(localctx, 12, MatlabParser.RULE_end_);
     var _la = 0; // Token type
     try {
         this.enterOuterAlt(localctx, 1);
@@ -718,10 +852,20 @@ MatlabParser.prototype.end_ = function() {
         this.state = 97;
         this._errHandler.sync(this);
         _la = this._input.LA(1);
-        while(_la===MatlabParser.SALTO) {
+        while(_la===MatlabParser.ESPACIO) {
             this.state = 94;
-            this.match(MatlabParser.SALTO);
+            this.match(MatlabParser.ESPACIO);
             this.state = 99;
+            this._errHandler.sync(this);
+            _la = this._input.LA(1);
+        }
+        this.state = 103;
+        this._errHandler.sync(this);
+        _la = this._input.LA(1);
+        while(_la===MatlabParser.SALTO) {
+            this.state = 100;
+            this.match(MatlabParser.SALTO);
+            this.state = 105;
             this._errHandler.sync(this);
             _la = this._input.LA(1);
         }
@@ -735,6 +879,407 @@ MatlabParser.prototype.end_ = function() {
 	    }
     } finally {
         this.exitRule();
+    }
+    return localctx;
+};
+
+function Const_Context(parser, parent, invokingState) {
+	if(parent===undefined) {
+	    parent = null;
+	}
+	if(invokingState===undefined || invokingState===null) {
+		invokingState = -1;
+	}
+	antlr4.ParserRuleContext.call(this, parent, invokingState);
+    this.parser = parser;
+    this.ruleIndex = MatlabParser.RULE_const_;
+    return this;
+}
+
+Const_Context.prototype = Object.create(antlr4.ParserRuleContext.prototype);
+Const_Context.prototype.constructor = Const_Context;
+
+Const_Context.prototype.DIGITO = function() {
+    return this.getToken(MatlabParser.DIGITO, 0);
+};
+
+Const_Context.prototype.CONSTANTE = function() {
+    return this.getToken(MatlabParser.CONSTANTE, 0);
+};
+
+Const_Context.prototype.enterRule = function(listener) {
+    if(listener instanceof MatlabListener ) {
+        listener.enterConst_(this);
+	}
+};
+
+Const_Context.prototype.exitRule = function(listener) {
+    if(listener instanceof MatlabListener ) {
+        listener.exitConst_(this);
+	}
+};
+
+
+
+
+MatlabParser.Const_Context = Const_Context;
+
+MatlabParser.prototype.const_ = function() {
+
+    var localctx = new Const_Context(this, this._ctx, this.state);
+    this.enterRule(localctx, 14, MatlabParser.RULE_const_);
+    var _la = 0; // Token type
+    try {
+        this.enterOuterAlt(localctx, 1);
+        this.state = 106;
+        _la = this._input.LA(1);
+        if(!(_la===MatlabParser.DIGITO || _la===MatlabParser.CONSTANTE)) {
+        this._errHandler.recoverInline(this);
+        }
+        else {
+        	this._errHandler.reportMatch(this);
+            this.consume();
+        }
+    } catch (re) {
+    	if(re instanceof antlr4.error.RecognitionException) {
+	        localctx.exception = re;
+	        this._errHandler.reportError(this, re);
+	        this._errHandler.recover(this, re);
+	    } else {
+	    	throw re;
+	    }
+    } finally {
+        this.exitRule();
+    }
+    return localctx;
+};
+
+function ExprContext(parser, parent, invokingState) {
+	if(parent===undefined) {
+	    parent = null;
+	}
+	if(invokingState===undefined || invokingState===null) {
+		invokingState = -1;
+	}
+	antlr4.ParserRuleContext.call(this, parent, invokingState);
+    this.parser = parser;
+    this.ruleIndex = MatlabParser.RULE_expr;
+    return this;
+}
+
+ExprContext.prototype = Object.create(antlr4.ParserRuleContext.prototype);
+ExprContext.prototype.constructor = ExprContext;
+
+
+ 
+ExprContext.prototype.copyFrom = function(ctx) {
+    antlr4.ParserRuleContext.prototype.copyFrom.call(this, ctx);
+};
+
+function ParensContext(parser, ctx) {
+	ExprContext.call(this, parser);
+    ExprContext.prototype.copyFrom.call(this, ctx);
+    return this;
+}
+
+ParensContext.prototype = Object.create(ExprContext.prototype);
+ParensContext.prototype.constructor = ParensContext;
+
+MatlabParser.ParensContext = ParensContext;
+
+ParensContext.prototype.expr = function() {
+    return this.getTypedRuleContext(ExprContext,0);
+};
+ParensContext.prototype.enterRule = function(listener) {
+    if(listener instanceof MatlabListener ) {
+        listener.enterParens(this);
+	}
+};
+
+ParensContext.prototype.exitRule = function(listener) {
+    if(listener instanceof MatlabListener ) {
+        listener.exitParens(this);
+	}
+};
+
+
+function MulDivContext(parser, ctx) {
+	ExprContext.call(this, parser);
+    this.op = null; // Token;
+    ExprContext.prototype.copyFrom.call(this, ctx);
+    return this;
+}
+
+MulDivContext.prototype = Object.create(ExprContext.prototype);
+MulDivContext.prototype.constructor = MulDivContext;
+
+MatlabParser.MulDivContext = MulDivContext;
+
+MulDivContext.prototype.expr = function(i) {
+    if(i===undefined) {
+        i = null;
+    }
+    if(i===null) {
+        return this.getTypedRuleContexts(ExprContext);
+    } else {
+        return this.getTypedRuleContext(ExprContext,i);
+    }
+};
+MulDivContext.prototype.enterRule = function(listener) {
+    if(listener instanceof MatlabListener ) {
+        listener.enterMulDiv(this);
+	}
+};
+
+MulDivContext.prototype.exitRule = function(listener) {
+    if(listener instanceof MatlabListener ) {
+        listener.exitMulDiv(this);
+	}
+};
+
+
+function AddSubContext(parser, ctx) {
+	ExprContext.call(this, parser);
+    this.op = null; // Token;
+    ExprContext.prototype.copyFrom.call(this, ctx);
+    return this;
+}
+
+AddSubContext.prototype = Object.create(ExprContext.prototype);
+AddSubContext.prototype.constructor = AddSubContext;
+
+MatlabParser.AddSubContext = AddSubContext;
+
+AddSubContext.prototype.expr = function(i) {
+    if(i===undefined) {
+        i = null;
+    }
+    if(i===null) {
+        return this.getTypedRuleContexts(ExprContext);
+    } else {
+        return this.getTypedRuleContext(ExprContext,i);
+    }
+};
+AddSubContext.prototype.enterRule = function(listener) {
+    if(listener instanceof MatlabListener ) {
+        listener.enterAddSub(this);
+	}
+};
+
+AddSubContext.prototype.exitRule = function(listener) {
+    if(listener instanceof MatlabListener ) {
+        listener.exitAddSub(this);
+	}
+};
+
+
+function IdContext(parser, ctx) {
+	ExprContext.call(this, parser);
+    ExprContext.prototype.copyFrom.call(this, ctx);
+    return this;
+}
+
+IdContext.prototype = Object.create(ExprContext.prototype);
+IdContext.prototype.constructor = IdContext;
+
+MatlabParser.IdContext = IdContext;
+
+IdContext.prototype.variable = function() {
+    return this.getTypedRuleContext(VariableContext,0);
+};
+IdContext.prototype.enterRule = function(listener) {
+    if(listener instanceof MatlabListener ) {
+        listener.enterId(this);
+	}
+};
+
+IdContext.prototype.exitRule = function(listener) {
+    if(listener instanceof MatlabListener ) {
+        listener.exitId(this);
+	}
+};
+
+
+function IntContext(parser, ctx) {
+	ExprContext.call(this, parser);
+    ExprContext.prototype.copyFrom.call(this, ctx);
+    return this;
+}
+
+IntContext.prototype = Object.create(ExprContext.prototype);
+IntContext.prototype.constructor = IntContext;
+
+MatlabParser.IntContext = IntContext;
+
+IntContext.prototype.CONSTANTE = function() {
+    return this.getToken(MatlabParser.CONSTANTE, 0);
+};
+IntContext.prototype.enterRule = function(listener) {
+    if(listener instanceof MatlabListener ) {
+        listener.enterInt(this);
+	}
+};
+
+IntContext.prototype.exitRule = function(listener) {
+    if(listener instanceof MatlabListener ) {
+        listener.exitInt(this);
+	}
+};
+
+
+function DigitoContext(parser, ctx) {
+	ExprContext.call(this, parser);
+    ExprContext.prototype.copyFrom.call(this, ctx);
+    return this;
+}
+
+DigitoContext.prototype = Object.create(ExprContext.prototype);
+DigitoContext.prototype.constructor = DigitoContext;
+
+MatlabParser.DigitoContext = DigitoContext;
+
+DigitoContext.prototype.DIGITO = function() {
+    return this.getToken(MatlabParser.DIGITO, 0);
+};
+DigitoContext.prototype.enterRule = function(listener) {
+    if(listener instanceof MatlabListener ) {
+        listener.enterDigito(this);
+	}
+};
+
+DigitoContext.prototype.exitRule = function(listener) {
+    if(listener instanceof MatlabListener ) {
+        listener.exitDigito(this);
+	}
+};
+
+
+
+MatlabParser.prototype.expr = function(_p) {
+	if(_p===undefined) {
+	    _p = 0;
+	}
+    var _parentctx = this._ctx;
+    var _parentState = this.state;
+    var localctx = new ExprContext(this, this._ctx, _parentState);
+    var _prevctx = localctx;
+    var _startState = 16;
+    this.enterRecursionRule(localctx, 16, MatlabParser.RULE_expr, _p);
+    var _la = 0; // Token type
+    try {
+        this.enterOuterAlt(localctx, 1);
+        this.state = 116;
+        this._errHandler.sync(this);
+        switch(this._input.LA(1)) {
+        case MatlabParser.CONSTANTE:
+            localctx = new IntContext(this, localctx);
+            this._ctx = localctx;
+            _prevctx = localctx;
+
+            this.state = 109;
+            this.match(MatlabParser.CONSTANTE);
+            break;
+        case MatlabParser.LETRA:
+            localctx = new IdContext(this, localctx);
+            this._ctx = localctx;
+            _prevctx = localctx;
+            this.state = 110;
+            this.variable();
+            break;
+        case MatlabParser.DIGITO:
+            localctx = new DigitoContext(this, localctx);
+            this._ctx = localctx;
+            _prevctx = localctx;
+            this.state = 111;
+            this.match(MatlabParser.DIGITO);
+            break;
+        case MatlabParser.T__4:
+            localctx = new ParensContext(this, localctx);
+            this._ctx = localctx;
+            _prevctx = localctx;
+            this.state = 112;
+            this.match(MatlabParser.T__4);
+            this.state = 113;
+            this.expr(0);
+            this.state = 114;
+            this.match(MatlabParser.T__5);
+            break;
+        default:
+            throw new antlr4.error.NoViableAltException(this);
+        }
+        this._ctx.stop = this._input.LT(-1);
+        this.state = 126;
+        this._errHandler.sync(this);
+        var _alt = this._interp.adaptivePredict(this._input,13,this._ctx)
+        while(_alt!=2 && _alt!=antlr4.atn.ATN.INVALID_ALT_NUMBER) {
+            if(_alt===1) {
+                if(this._parseListeners!==null) {
+                    this.triggerExitRuleEvent();
+                }
+                _prevctx = localctx;
+                this.state = 124;
+                this._errHandler.sync(this);
+                var la_ = this._interp.adaptivePredict(this._input,12,this._ctx);
+                switch(la_) {
+                case 1:
+                    localctx = new MulDivContext(this, new ExprContext(this, _parentctx, _parentState));
+                    this.pushNewRecursionContext(localctx, _startState, MatlabParser.RULE_expr);
+                    this.state = 118;
+                    if (!( this.precpred(this._ctx, 6))) {
+                        throw new antlr4.error.FailedPredicateException(this, "this.precpred(this._ctx, 6)");
+                    }
+                    this.state = 119;
+                    localctx.op = this._input.LT(1);
+                    _la = this._input.LA(1);
+                    if(!(_la===MatlabParser.T__0 || _la===MatlabParser.T__1)) {
+                        localctx.op = this._errHandler.recoverInline(this);
+                    }
+                    else {
+                    	this._errHandler.reportMatch(this);
+                        this.consume();
+                    }
+                    this.state = 120;
+                    this.expr(7);
+                    break;
+
+                case 2:
+                    localctx = new AddSubContext(this, new ExprContext(this, _parentctx, _parentState));
+                    this.pushNewRecursionContext(localctx, _startState, MatlabParser.RULE_expr);
+                    this.state = 121;
+                    if (!( this.precpred(this._ctx, 5))) {
+                        throw new antlr4.error.FailedPredicateException(this, "this.precpred(this._ctx, 5)");
+                    }
+                    this.state = 122;
+                    localctx.op = this._input.LT(1);
+                    _la = this._input.LA(1);
+                    if(!(_la===MatlabParser.T__2 || _la===MatlabParser.T__3)) {
+                        localctx.op = this._errHandler.recoverInline(this);
+                    }
+                    else {
+                    	this._errHandler.reportMatch(this);
+                        this.consume();
+                    }
+                    this.state = 123;
+                    this.expr(6);
+                    break;
+
+                } 
+            }
+            this.state = 128;
+            this._errHandler.sync(this);
+            _alt = this._interp.adaptivePredict(this._input,13,this._ctx);
+        }
+
+    } catch( error) {
+        if(error instanceof antlr4.error.RecognitionException) {
+	        localctx.exception = error;
+	        this._errHandler.reportError(this, error);
+	        this._errHandler.recover(this, error);
+	    } else {
+	    	throw error;
+	    }
+    } finally {
+        this.unrollRecursionContexts(_parentctx)
     }
     return localctx;
 };
@@ -783,12 +1328,12 @@ MatlabParser.VariableContext = VariableContext;
 MatlabParser.prototype.variable = function() {
 
     var localctx = new VariableContext(this, this._ctx, this.state);
-    this.enterRule(localctx, 12, MatlabParser.RULE_variable);
+    this.enterRule(localctx, 18, MatlabParser.RULE_variable);
     try {
         this.enterOuterAlt(localctx, 1);
-        this.state = 100;
+        this.state = 129;
         this.inic_variable();
-        this.state = 101;
+        this.state = 130;
         this.cuerpo_variable();
     } catch (re) {
     	if(re instanceof antlr4.error.RecognitionException) {
@@ -848,20 +1393,19 @@ MatlabParser.Inic_variableContext = Inic_variableContext;
 MatlabParser.prototype.inic_variable = function() {
 
     var localctx = new Inic_variableContext(this, this._ctx, this.state);
-    this.enterRule(localctx, 14, MatlabParser.RULE_inic_variable);
-    var _la = 0; // Token type
+    this.enterRule(localctx, 20, MatlabParser.RULE_inic_variable);
     try {
         this.enterOuterAlt(localctx, 1);
-        this.state = 103;
+        this.state = 132;
         this.match(MatlabParser.LETRA);
-        this.state = 105;
+        this.state = 134;
         this._errHandler.sync(this);
-        _la = this._input.LA(1);
-        if(_la===MatlabParser.SEPARADOR) {
-            this.state = 104;
+        var la_ = this._interp.adaptivePredict(this._input,14,this._ctx);
+        if(la_===1) {
+            this.state = 133;
             this.match(MatlabParser.SEPARADOR);
-        }
 
+        }
     } catch (re) {
     	if(re instanceof antlr4.error.RecognitionException) {
 	        localctx.exception = re;
@@ -948,47 +1492,49 @@ MatlabParser.Cuerpo_variableContext = Cuerpo_variableContext;
 MatlabParser.prototype.cuerpo_variable = function() {
 
     var localctx = new Cuerpo_variableContext(this, this._ctx, this.state);
-    this.enterRule(localctx, 16, MatlabParser.RULE_cuerpo_variable);
-    var _la = 0; // Token type
+    this.enterRule(localctx, 22, MatlabParser.RULE_cuerpo_variable);
     try {
         this.enterOuterAlt(localctx, 1);
-        this.state = 115;
+        this.state = 144;
         this._errHandler.sync(this);
-        _la = this._input.LA(1);
-        while(_la===MatlabParser.LETRA || _la===MatlabParser.DIGITO) {
-            this.state = 113;
-            this._errHandler.sync(this);
-            var la_ = this._interp.adaptivePredict(this._input,13,this._ctx);
-            switch(la_) {
-            case 1:
-                this.state = 107;
-                this.match(MatlabParser.LETRA);
-                break;
+        var _alt = this._interp.adaptivePredict(this._input,16,this._ctx)
+        while(_alt!=2 && _alt!=antlr4.atn.ATN.INVALID_ALT_NUMBER) {
+            if(_alt===1) {
+                this.state = 142;
+                this._errHandler.sync(this);
+                var la_ = this._interp.adaptivePredict(this._input,15,this._ctx);
+                switch(la_) {
+                case 1:
+                    this.state = 136;
+                    this.match(MatlabParser.LETRA);
+                    break;
 
-            case 2:
-                this.state = 108;
-                this.match(MatlabParser.DIGITO);
-                break;
+                case 2:
+                    this.state = 137;
+                    this.match(MatlabParser.DIGITO);
+                    break;
 
-            case 3:
-                this.state = 109;
-                this.match(MatlabParser.LETRA);
-                this.state = 110;
-                this.match(MatlabParser.SEPARADOR);
-                break;
+                case 3:
+                    this.state = 138;
+                    this.match(MatlabParser.LETRA);
+                    this.state = 139;
+                    this.match(MatlabParser.SEPARADOR);
+                    break;
 
-            case 4:
-                this.state = 111;
-                this.match(MatlabParser.DIGITO);
-                this.state = 112;
-                this.match(MatlabParser.SEPARADOR);
-                break;
+                case 4:
+                    this.state = 140;
+                    this.match(MatlabParser.DIGITO);
+                    this.state = 141;
+                    this.match(MatlabParser.SEPARADOR);
+                    break;
 
+                } 
             }
-            this.state = 117;
+            this.state = 146;
             this._errHandler.sync(this);
-            _la = this._input.LA(1);
+            _alt = this._interp.adaptivePredict(this._input,16,this._ctx);
         }
+
     } catch (re) {
     	if(re instanceof antlr4.error.RecognitionException) {
 	        localctx.exception = re;
@@ -1001,6 +1547,27 @@ MatlabParser.prototype.cuerpo_variable = function() {
         this.exitRule();
     }
     return localctx;
+};
+
+
+MatlabParser.prototype.sempred = function(localctx, ruleIndex, predIndex) {
+	switch(ruleIndex) {
+	case 8:
+			return this.expr_sempred(localctx, predIndex);
+    default:
+        throw "No predicate with index:" + ruleIndex;
+   }
+};
+
+MatlabParser.prototype.expr_sempred = function(localctx, predIndex) {
+	switch(predIndex) {
+		case 0:
+			return this.precpred(this._ctx, 6);
+		case 1:
+			return this.precpred(this._ctx, 5);
+		default:
+			throw "No predicate with index:" + predIndex;
+	}
 };
 
 
