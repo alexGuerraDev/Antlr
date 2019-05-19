@@ -15,7 +15,7 @@ case_               : (CASE ESPACIO DIGITO ESPACIO* SALTO* sentencia)+  ;
 
 otherwise_          : OTHERWISE ESPACIO* SALTO* sentencia;
 
-sentencia           : expr ESPACIO* SALTO+ ;
+sentencia           : ESPACIO* expr ESPACIO* SALTO+ ;
 
 end_                : END ESPACIO* SALTO*  ;
 
