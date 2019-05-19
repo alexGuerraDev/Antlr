@@ -1,8 +1,15 @@
-.container{
-    margin-top: 10vh;
+.custom-container{
+    margin:2%; 
 }
+
+h1{
+    width: 10px;
+    text-align: center
+}
+
+
 .linedArea {
-    min-height: 40vh;
+    min-height: 70vh;
 }
 
 .linedwrap {
@@ -28,7 +35,7 @@
 .errContainer{
     border-radius: 5px;
     border: 1px solid #808088;
-    height: 55vh;
+    height: 85vh;
     padding-left: 8px;
     padding-right: 8px;
     overflow: auto;
