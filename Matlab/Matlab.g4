@@ -13,7 +13,7 @@ switch_             : SWITCH ESPACIO variable ESPACIO* SALTO+ ;
 
 case_               : (CASE ESPACIO DIGITO ESPACIO* SALTO* sentencia)+  ;
 
-otherwise_          : OTHERWISE ESPACIO* SALTO* sentencia;
+otherwise_          : OTHERWISE ESPACIO* SALTO+ sentencia;
 
 sentencia           : ESPACIO* expr ESPACIO* SALTO+ ;
 
@@ -75,15 +75,14 @@ CONSTANTE            : DIGITO+ (SIGNO_DECIMAL DIGITO+)?;
  *
  */
 
-SWITCH                : 'SWITCH' | 'switch' ;
-CASE                 : 'Case'  ;
-OTHERWISE            : 'Otherwise' ;
-END                  : 'END'| 'end' ;
+SWITCH               : 'switch' ;
+CASE                 : 'case'  ;
+OTHERWISE            : 'otherwise' ;
+END                  : 'end' ;
 
 
 
 
 /*
  * Revisar que el digito del case reciba más de un digito. Ejemplo : 10, 12, 125
- * Revisar como se componen las sentencias
 */
