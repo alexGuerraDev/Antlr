@@ -49,6 +49,8 @@
 
 ### 4. RUN THE PROJECT 🚀
 
+      antlr4 -Dlanguage=JavaScript Matlab/Matlab.g4
+
       npm start
   
     

@@ -11,11 +11,11 @@ expresion           : switch_ case_ otherwise_ end_;
 
 switch_             : SWITCH ESPACIO variable ESPACIO* SALTO+ ;
 
-case_               : (CASE ESPACIO DIGITO ESPACIO* SALTO* sentencia)+  ;
+case_               : (CASE ESPACIO DIGITO ESPACIO* SALTO+ sentencia)+  ;
 
 otherwise_          : OTHERWISE ESPACIO* SALTO+ sentencia;
 
-sentencia           : ESPACIO* expr ESPACIO* SALTO+ ;
+sentencia           : (ESPACIO* expr ESPACIO* SALTO+)+ ;
 
 end_                : END ESPACIO* SALTO*  ;
 
@@ -46,17 +46,17 @@ cuerpo_variable     : (LETRA | DIGITO | LETRA SEPARADOR | DIGITO SEPARADOR)* ;
  */
 
 
-fragment MINUSCULAS  : [a-z];
-fragment MAYUSCULAS  : [A-Z];
-fragment NUMBER      : [0-9];
-fragment GUION       : ('_');
+fragment MINUSCULAS      : [a-z];
+fragment MAYUSCULAS      : [A-Z];
+fragment NUMBER          : [0-9];
+fragment GUION           : ('_');
 fragment SIGNO_DECIMAL   : ('.'|',');
-OPERADORES           : ('+' | '-' | '*' | '/');
+OPERADORES               : ('+' | '-' | '*' | '/');
 
 
 LETRA                : (MINUSCULAS | MAYUSCULAS);
 
-DIGITO               : (NUMBER);
+DIGITO               : (NUMBER)+;
 
 SEPARADOR            : (GUION);
 
@@ -81,8 +81,3 @@ OTHERWISE            : 'otherwise' ;
 END                  : 'end' ;
 
 
-
-
-/*
- * Revisar que el digito del case reciba más de un digito. Ejemplo : 10, 12, 125
-*/
