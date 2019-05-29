@@ -29,7 +29,7 @@ $(function () {
                     let noErr = `
                     <div class="card green lighten-1">
                         <div class="card-content">
-                            <div class="card-title">Cadena aceptada</div>
+                            <div class="card-title">Expresión aceptada</div>
                             <p>No se encontró ningún error durante el análisis</p>
                         </div>
                     </div>
